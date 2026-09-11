@@ -1,0 +1,12 @@
+:root {
+    --color-primary: #7B1B38;
+    --color-text: #1a1a1a;
+    --space-md: 1rem;
+
+}
+.test {
+    color: #ff00e6;
+    text-align: center;    
+    
+}
+    
