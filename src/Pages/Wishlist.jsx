@@ -1,4 +1,6 @@
 import './Wishlist.css'
+import Header from '../Components/Header/Header'
+import Banner from '../Components/Banner/Banner'
 
 const wishlistItems = [
   {
@@ -23,7 +25,10 @@ const wishlistItems = [
 
 function Wishlist() {
   return (
-    <main className="wishlist-page">
+    <div className="wishlist-page">
+      <Header title="WISHLIST" />
+      <Banner />
+
       <header className="wishlist-header">
         <div>
           <p className="wishlist-label">GameShelf</p>
@@ -55,7 +60,7 @@ function Wishlist() {
           ))}
         </div>
       </section>
-    </main>
+    </div>
   )
 }
 

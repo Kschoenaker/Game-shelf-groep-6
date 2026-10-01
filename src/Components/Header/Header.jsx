@@ -1,11 +1,11 @@
 import "./Header.css";
 import { Search, Grid2X2, List } from "lucide-react";
 
-function Header() {
+function Header({ title = "COLLECTIONS & SHELFS" }) {
     return (
-        <main className="header">
+        <header className="header">
             <div className="header-header">
-                <h2>COLLECTIONS & SHELFS</h2>
+                <h2>{title}</h2>
 
                 <div className="search-bar">
                     <Search />
@@ -22,7 +22,7 @@ function Header() {
                     </button>
                 </div>
             </div>
-        </main>
+        </header>
     );
 }
 

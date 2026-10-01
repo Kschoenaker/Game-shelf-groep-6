@@ -1,30 +1,37 @@
 import "./Sidebar.css";
-import { Home, Library, User, Settings } from "lucide-react";
+import { Home as HomeIcon, Library, User, Settings, Heart } from "lucide-react";
 
 function Sidebar() {
+    const pathname = window.location.pathname;
+
     return (
         <aside className="sidebar">
             <h1>GameShelf</h1>
 
             <nav>
-                <button>
-                    <Home />
+                <a className={pathname === "/" ? "active" : ""} href="/">
+                    <HomeIcon />
                     <span>Home</span>
-                </button>
+                </a>
 
-                <button className="active">
+                <a className={pathname === "/collections-and-shelves" ? "active" : ""} href="/collections-and-shelves">
                     <Library />
                     <span>Collections & Shelves</span>
-                </button>
+                </a>
+
+                <a className={pathname === "/wishlists" ? "active" : ""} href="/wishlists">
+                    <Heart />
+                    <span>Wishlist</span>
+                </a>
             </nav>
 
             <div className="sidebar-bottom">
-                <button>
+                <button type="button">
                     <User />
                     <span>Account</span>
                 </button>
 
-                <button>
+                <button type="button">
                     <Settings />
                     <span>Settings</span>
                 </button>
