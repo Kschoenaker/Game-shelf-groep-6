@@ -1,0 +1,26 @@
+.collections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+    align-items: left;
+}
+
+.games {
+    padding: 2rem;
+}
+
+.game-card {
+    width: 12rem;
+}
+
+.game-card img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.game-card h3 {
+    margin: 0.75rem 0 0;
+}
