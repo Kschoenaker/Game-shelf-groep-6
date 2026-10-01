@@ -1,14 +1,38 @@
 import "./Collections.css";
 
 function Collections() {
+
+    const games = [
+        {
+            name: "Resident Evil 7",
+            image: "/games/resident-evil-7.jpg"
+        },
+        {
+            name: "Resident Evil 2",
+            image: "/games/resident-evil-7.jpg"
+        },
+        {
+            name: "Resident Evil 1",
+            image: "/games/resident-evil-7.jpg"
+        },
+        {
+            name: "Resident Evil 0",
+            image: "/games/resident-evil-7.jpg"
+        }
+    ];
+
     return (
         <section className="collections">
-            <h2>MY GAMES</h2>
+            {games.map((game) => (
+                <div className="game-card" key={game.name}>
+                    <img
+                        src={game.image}
+                        alt={game.name}
+                    />
 
-            <div className="collection-card">
-                <h3>My Games</h3>
-                <p>24 games</p>
-            </div>
+                    <h3>{game.name}</h3>
+                </div>
+            ))}
         </section>
     );
 }
