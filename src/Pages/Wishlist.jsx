@@ -27,7 +27,7 @@ function Wishlist() {
   return (
     <div className="wishlist-page">
       <Header title="WISHLIST" />
-      <Banner />
+      {/* <Banner /> */}
 
       <header className="wishlist-header">
         <div>
